@@ -1,0 +1,26 @@
+# backend/requirements.txt
+# ─── Core ─────────────────────
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic-settings==2.1.0
+
+# ─── Database ─────────────────
+sqlalchemy[asyncio]==2.0.25
+asyncpg==0.29.0          # PostgreSQL async driver
+alembic==1.13.1          # migrations
+
+# ─── Evernote ─────────────────
+evernote3==1.25.14        # Evernote SDK for Python 3
+
+# ─── Utilities ────────────────
+python-dotenv==1.0.0
+httpx==0.26.0             # async HTTP client (for future APIs)
+cryptography==42.0.0      # token encryption
+
+# ─── Phase 2-3 (uncomment when needed) ─────
+# FinanceDataReader==0.9.66  # Korean stock data
+# pykrx==1.0.45              # KRX stock data
+# dart-fss==0.4.5            # DART financial statements
+# telethon==1.34.0           # Telegram client
+# beautifulsoup4==4.12.3     # web scraping
+# anthropic==0.18.0          # Claude AI API
